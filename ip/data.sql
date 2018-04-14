@@ -1,0 +1,7 @@
+CREATE TABLE ipdata2 (
+id BIGINT ( 20 ) NOT NULL auto_increment PRIMARY KEY,
+startip VARCHAR ( 45 ) DEFAULT NULL,
+endip VARCHAR ( 45 ) DEFAULT NULL,
+country VARCHAR ( 45 ) DEFAULT NULL,
+LOCAL VARCHAR ( 300 ) DEFAULT NULL 
+) charset = utf8;
