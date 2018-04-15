@@ -28,19 +28,19 @@
 ipdata数据库表创建SQL:
 
 ```sql
-	CREATE TABLE `ip_location` (
-	  `id` bigint(16) unsigned NOT NULL AUTO_INCREMENT,
-	  `begin_ip` varchar(20) DEFAULT '' COMMENT '起始IP地址',
-	  `end_ip` varchar(20) DEFAULT '' COMMENT '结束IP地址',
-	  `country` varchar(200) DEFAULT '' COMMENT '省份/国家',
-	  `area` varchar(500) DEFAULT '' COMMENT '地区',
-	  PRIMARY KEY (`id`),
-	  UNIQUE KEY `id` (`id`),
-	  KEY `country` (`country`) USING BTREE,
-	  KEY `begin_ip` (`begin_ip`) USING BTREE COMMENT '开始IP',
-	  KEY `end_id` (`end_ip`) USING BTREE COMMENT '结束IP',
-	  FULLTEXT KEY `area` (`area`)
-	) ENGINE=MyISAM AUTO_INCREMENT=450826 DEFAULT CHARSET=utf8 COMMENT='纯真IP数据库mysql utf8 版, By Tekin';
+CREATE TABLE `ip_location` (
+  `id` bigint(16) unsigned NOT NULL AUTO_INCREMENT,
+  `begin_ip` varchar(20) DEFAULT '' COMMENT '起始IP地址',
+  `end_ip` varchar(20) DEFAULT '' COMMENT '结束IP地址',
+  `country` varchar(200) DEFAULT '' COMMENT '省份/国家',
+  `area` varchar(500) DEFAULT '' COMMENT '地区',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`),
+  KEY `country` (`country`) USING BTREE,
+  KEY `begin_ip` (`begin_ip`) USING BTREE COMMENT '开始IP',
+  KEY `end_id` (`end_ip`) USING BTREE COMMENT '结束IP',
+  FULLTEXT KEY `area` (`area`)
+) ENGINE=MyISAM AUTO_INCREMENT=450826 DEFAULT CHARSET=utf8 COMMENT='纯真IP数据库mysql utf8 版, By Tekin';
 ```
 
 
