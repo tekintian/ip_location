@@ -21,3 +21,9 @@ ip_location.sql.gz  使用adminer导入即可
 纯真IP数据库更新方法与工具
 ip/ip.exe
 
+
+# mysql 查询IP地址信息示例
+
+```sql
+	SELECT *  FROM ip_location WHERE INET_ATON( '8.8.8.8' ) BETWEEN INET_ATON( begin_ip ) AND INET_ATON( end_ip );
+```

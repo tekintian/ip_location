@@ -20,9 +20,7 @@
 
 
 ### 替换为：
-	INSERT INTO `ip_location`(`begin_ip`, `end_id`, `country`, `area`) VALUES ("$1","$3","$5","$7");
-
-
+	INSERT INTO `ip_location`(`begin_ip`, `end_ip`, `country`, `area`) VALUES ("$1","$3","$5","$7");
 
 
 ## 第四步，创建数据库表，导入刚刚替换完成后的SQL文件
@@ -32,11 +30,11 @@ ipdata数据库表创建SQL:
 	CREATE TABLE `ip_location` (
 	  `id` bigint(16) unsigned NOT NULL AUTO_INCREMENT,
 	  `begin_ip` varchar(20) DEFAULT '' COMMENT '起始IP地址',
-	  `end_id` varchar(20) DEFAULT '' COMMENT '结束IP地址',
+	  `end_ip` varchar(20) DEFAULT '' COMMENT '结束IP地址',
 	  `country` varchar(200) DEFAULT '' COMMENT '省份/国家',
 	  `area` varchar(500) DEFAULT '' COMMENT '地区',
 	  PRIMARY KEY (`id`),
-	  KEY `ip` (`begin_ip`,`end_id`) USING BTREE COMMENT 'IP地址索引',
+	  KEY `ip` (`begin_ip`,`end_ip`) USING BTREE COMMENT 'IP地址索引',
 	  KEY `country` (`country`) USING BTREE,
 	  FULLTEXT KEY `area` (`area`)
 	) ENGINE=MyISAM AUTO_INCREMENT=450826 DEFAULT CHARSET=utf8 COMMENT='纯真IP数据库mysql utf8 版, By Tekin';
