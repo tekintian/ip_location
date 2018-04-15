@@ -71,19 +71,3 @@ Exit
 2、将“QQwry.dat”及“IPwry.exe”等放在同一文件夹下。
 
 3、执行“IPwry.bat”便可以生成CNSS格式的“IPwry.dat”IP文件了。
-
-相关文件下载地址:
-
-1、ipwry 0.2.2c
-
-在下载页面选择“ipwry_0_2_2c.zip”这个
-
-http://cosoft.org.cn/projects/ipwry/
-
-附带“IPwry.bat”的ipwry_0_2_2c.zip压缩包
-
-2、纯真数据库
-
-http://www.cz88.net/
-
-附带源码：IPwry0_2_2
